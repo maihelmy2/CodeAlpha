@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading Platform</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="trading-platform">
+        <h1>Stock Trading Platform</h1>
+        <div class="market-data">
+            <h2>Market Data</h2>
+            <table id="market-data-table">
+                <thead>
+                    <tr>
+                        <th>Stock</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Market data will be populated here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="trading">
+            <h2>Trade</h2>
+            <input type="text" id="stock-symbol" placeholder="Stock Symbol">
+            <input type="number" id="stock-quantity" placeholder="Quantity">
+            <button id="buy-stock">Buy</button>
+            <button id="sell-stock">Sell</button>
+        </div>
+        <div class="portfolio">
+            <h2>Portfolio</h2>
+            <table id="portfolio-table">
+                <thead>
+                    <tr>
+                        <th>Stock</th>
+                        <th>Quantity</th>
+                        <th>Average Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Portfolio data will be populated here -->
+                </tbody>
+            </table>
+            <p>Total Portfolio Value: $<span id="portfolio-value">0.00</span></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

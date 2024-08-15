@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation System - Search</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Reservation System</h1>
+        <div class="search-form">
+            <label for="check-in">Check-in date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+            
+            <label for="check-out">Check-out date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+            
+            <label for="room-type">Room type:</label>
+            <select id="room-type" name="room-type">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+            
+            <button onclick="searchRooms()">Search</button>
+        </div>
+        
+        <div id="room-results" class="room-results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+    
+    <script src="utills.js"></script>
+</body>
+</html>
