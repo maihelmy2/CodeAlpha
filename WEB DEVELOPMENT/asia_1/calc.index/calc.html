@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calc</title>
+  <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+  <h1 class="text"><b>Calculator</b></h1>
+  <div class="containr">
+      <form id="formm" name="form1">
+          <input type="text" name="answer" placeholder="0">
+          <br>
+          <input type="button" value="7" id="bb" onclick="handleButtonClick('7')">
+          <input type="button" value="8" id="bb" onclick="handleButtonClick('8')">
+          <input type="button" value="9" id="bb" onclick="handleButtonClick('9')">
+          <input type="button" value="/" id="math" onclick="handleButtonClick('/')">
+          <br><br>
+          <input type="button" value="4" id="bb" onclick="handleButtonClick('4')">
+          <input type="button" value="5" id="bb" onclick="handleButtonClick('5')">
+          <input type="button" value="6" id="bb" onclick="handleButtonClick('6')">
+          <input type="button" value="*" id="math" onclick="handleButtonClick('*')">
+          <br><br>
+          <input type="button" value="1" id="bb" onclick="handleButtonClick('1')">
+          <input type="button" value="2" id="bb" onclick="handleButtonClick('2')">
+          <input type="button" value="3" id="bb" onclick="handleButtonClick('3')">
+          <input type="button" value="-" id="math" onclick="handleButtonClick('-')">
+          <br><br>
+          <input type="button" value="0" id="bb" onclick="handleButtonClick('0')">
+          <input type="button" value="." id="bb" onclick="handleButtonClick('.')">
+          <input type="button" value="+" id="math" onclick="handleButtonClick('+')">
+          <input type="button" value="=" id="math" onclick="handleButtonClick('=')">
+          <br>
+          <input type="button" value="clear all" onclick="handleButtonClick('clear all')" id="clear">
+      </form>
+  </div>
+  <script src="./calc.js"></script>
+</body>
+</html>
+      
